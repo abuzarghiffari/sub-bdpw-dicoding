@@ -1,2 +1,2 @@
 # sub-bdpw-dicoding
-Belajar Dasar Pemrograman Web
+Belajar Dasar Pemrograman Web Dicoding
