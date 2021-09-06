@@ -1,0 +1,38 @@
+.dark-toggle {
+    display: flex; }
+
+#toggle {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50px;
+    background-color: #202124; }
+input {
+    visibility: hidden; }
+
+body.dark {
+    background-color: #2d2e30; }
+
+body.dark p,
+body.dark .logo a,
+body.dark .menu-list li a,
+body.dark .icon,
+body.dark section,
+body.dark aside .sosmed li a {
+    color: #FFF; }
+
+body.dark #toggle {
+    background-color: #FFF; }
+
+body.dark nav,
+body.dark .menu-list,
+body.dark .button,
+body.dark .paragraph,
+body.dark aside .sosmed li,
+body.dark footer {
+    background-color: #202124; }
+
+body.dark .button p,
+body.dark section {
+    background-color: #38393A; }

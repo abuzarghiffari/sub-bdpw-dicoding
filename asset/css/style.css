@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.078px;
+    font-family: 'San Francisco Regular'; }
+body {
+    background-color: #d4d4d4; }
+.container {
+    margin: auto;
+    max-width: 1250px;
+    box-sizing: border-box; }
+p {
+    line-height: 20px; }
+
+nav {
+    padding: 10px;
+    background-color: #E5E5E5; }
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+nav .logo img  {
+   width: 45px; }
+nav .menu-list {
+    display: inline-flex;
+    align-items: center;
+    list-style: none; }
+nav .menu-list li a {
+    color: #202124;
+    text-decoration: none; }
+.icon {
+    display: none;
+    cursor: pointer;
+    font-size: 20px; }
+.icon.cancel-toggle {
+    top: 25px;
+    left: 12px;
+    position: absolute; }
+
+main {
+    margin: 10px 10px; }
+main .container, article .content {
+    display: flex;
+    flex-direction: column-reverse; }
+
+.button {
+    display: flex;
+    background-color: #E5E5E5;
+    border-radius: 20px 20px 0 0; }
+.button img {
+    padding: 15px; }
+.button p {
+    color: #202124;
+    padding: 8px 20px;
+    align-self: flex-end;
+    background-color: #FFF;
+    border-radius: 14px 14px 0 0; }
+
+article {
+    flex: 3; }
+
+section {
+    margin: 16px;
+    color: #202124;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #FFF; }
+.content {
+    justify-content: center; }
+article .content {
+    align-items: center; }
+article .content ul {
+    list-style: none; }
+article .content .paragraph {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 14px;
+    background-color: #E5E5E5; }
+article .content .captain {
+    width: 60%;
+    padding: 16px; }
+article .content .ironman {
+    width: 45%;
+    padding: 16px; }
+article .content-2 {
+    flex-direction: column; }
+article .content .spiderman {
+    width: 80%;
+    padding: 0 16px 16px 16px; }
+
+aside {
+    flex: 1; }
+aside .photo {
+    text-align: center;
+    margin-bottom: 15px; }
+aside .photo img {
+    width: 100px;
+    border-radius: 50px; }
+aside .photo h4 {
+    font-size: 25px;
+    font-family: 'San Francisco Semibold'; }
+aside .content {
+    padding: 16px; }
+aside .sosmed {
+    display: flex;
+    justify-content: center; }
+aside .sosmed li {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    font-size: 22px;
+    margin: 15px 10px 0 10px;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    background-color: #E5E5E5; }
+aside .sosmed li a {
+    color: #38393A; }
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #E5E5E5; }
+
+@media (max-width: 992px) {
+    .icon {
+        display: block; }
+    .icon.hide {
+        display: none; }
+    .logo {
+        order: 2;
+        margin-left: 35px;
+        text-align: center; }
+    .menu-list {
+        order: 1; }
+    .dark-toggle {
+        order: 3; }
+    
+    nav .menu-list {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: fixed;
+        padding: 150px 0;
+        text-align: center;
+        background-color: #E5E5E5; }
+    nav .menu-list.active {
+        left: 0%; }
+    nav .menu-list li {
+        font-size: 40px;
+        margin-top: 50px; }
+   
+    aside {
+        margin-bottom: -16px; }    
+}
+
+@media (min-width: 992px) {
+    nav .menu-list li a {
+        margin: 10px; }
+
+    main .container, article .content {
+        flex-direction: row; }
+    
+    article .content .captain {
+        width: 250px; }
+    article .content .ironman {
+        width: 150px; }
+    article .content .spiderman {
+        width: 350px; }
+    
+    aside {
+        margin: 0 0 0 -16px; }
+}
