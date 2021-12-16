@@ -7,7 +7,7 @@
     cursor: pointer;
     user-select: none;
     border-radius: 50px;
-    background-color: #202124; }
+    background-color: var(--black); }
 input {
     visibility: hidden; }
 
@@ -20,10 +20,10 @@ body.dark .menu-list li a,
 body.dark .icon,
 body.dark section,
 body.dark aside .sosmed li a {
-    color: #FFF; }
+    color: var(--white); }
 
 body.dark #toggle {
-    background-color: #FFF; }
+    background-color: var(--white); }
 
 body.dark nav,
 body.dark .menu-list,
@@ -31,7 +31,7 @@ body.dark .button,
 body.dark .paragraph,
 body.dark aside .sosmed li,
 body.dark footer {
-    background-color: #202124; }
+    background-color: var(--black); }
 
 body.dark .button p,
 body.dark section {

@@ -1,3 +1,11 @@
+@import url(dark.css);
+@import url(../fonts/fonts.css);
+
+:root {
+  --white: #ffffff;
+  --grey: #e5e5e5;
+  --black: #202124;
+  --blue: #0a84ff; }
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +22,7 @@ p {
 
 nav {
     padding: 10px;
-    background-color: #E5E5E5; }
+    background-color: var(--grey); }
 nav .container {
     display: flex;
     align-items: center;
@@ -26,7 +34,7 @@ nav .menu-list {
     align-items: center;
     list-style: none; }
 nav .menu-list li a {
-    color: #202124;
+    color: var(--black);
     text-decoration: none; }
 .icon {
     display: none;
@@ -45,15 +53,15 @@ main .container, article .content {
 
 .button {
     display: flex;
-    background-color: #E5E5E5;
+    background-color: var(--grey);
     border-radius: 20px 20px 0 0; }
 .button img {
     padding: 15px; }
 .button p {
-    color: #202124;
+    color: var(--black);
     padding: 8px 20px;
     align-self: flex-end;
-    background-color: #FFF;
+    background-color: var(--white);
     border-radius: 14px 14px 0 0; }
 
 article {
@@ -61,21 +69,21 @@ article {
 
 section {
     margin: 16px;
-    color: #202124;
+    color: var(--black);
     border-radius: 20px;
     box-sizing: border-box;
-    background-color: #FFF; }
+    background-color: var(--white); }
 .content {
     justify-content: center; }
 article .content {
     align-items: center; }
 article .content ul {
     list-style: none; }
-article .content .paragraph {
+article .paragraph {
     margin: 16px;
     padding: 16px;
     border-radius: 14px;
-    background-color: #E5E5E5; }
+    background-color: var(--grey); }
 article .content .captain {
     width: 60%;
     padding: 16px; }
@@ -113,14 +121,14 @@ aside .sosmed li {
     align-items: center;
     border-radius: 50px;
     justify-content: center;
-    background-color: #E5E5E5; }
+    background-color: var(--grey); }
 aside .sosmed li a {
     color: #38393A; }
 
 footer {
     padding: 10px;
     text-align: center;
-    background-color: #E5E5E5; }
+    background-color: var(--grey); }
 
 @media (max-width: 992px) {
     .icon {
@@ -145,7 +153,7 @@ footer {
         position: fixed;
         padding: 150px 0;
         text-align: center;
-        background-color: #E5E5E5; }
+        background-color: var(--grey); }
     nav .menu-list.active {
         left: 0%; }
     nav .menu-list li {
